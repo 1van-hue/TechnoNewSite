@@ -1,192 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="ru">
-<head> 
-<link rel="stylesheet" href="style.css">
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой проект: новости, финансы, безопасность</title>
-    <meta name="yandex-verification" content="4cbe0db116ca0ffe" />
-   
-</head>
+    <title>Techno News — новости, финансы, программирование</title>
+
+    <!-- Сюда вставишь метатег от Яндекс Вебмастера -->
+    <!-- <meta name="yandex-verification" content="ТВОЙ_КОД_ОТ_ЯНДЕКСА" /> -->
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            margin: 0;
-        }
-        h1 {
-            color: #333;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-            color: #666;
-        }
-
-        
-        .btn-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-            width: 100%;
-            max-width: 500px;
-            margin-bottom: 40px;
-        }
-
-        
-        .btn {
-            background: #007bff;
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 16px;
-            transition: background 0.2s, transform 0.1s;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-            text-align: center;
-            min-width: 130px;
-            display: inline-block;
-        }
-        .btn:hover {
-            background: #0056b3;
-        }
-        .btn:active {
-            transform: scale(0.98);
-        }
-
-        
-        .feedback-form {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 500px;
-        }
-        .feedback-form h2 {
-            margin-top: 0;
-            color: #333;
-            text-align: center;
-        }
-        .feedback-form label {
-            display: block;
-            margin-top: 18px;
-            font-weight: bold;
-            color: #555;
-        }
-        .feedback-form input,
-        .feedback-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 6px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box;
-            font-size: 15px;
-        }
-        .feedback-form button {
-            margin-top: 24px;
-            width: 100%;
-            padding: 14px;
-            background: #28a745;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 17px;
-            cursor: pointer;
-            transition: background 0.2s;
-        }
-        .feedback-form button:hover {
-            background: #218838;
-        }
-        .note {
-            margin-top: 20px;
-            font-size: 13px;
-            color: #888;
-            text-align: center;
-        }
-
-        
-        @media (max-width: 400px) {
-            .btn {
-                min-width: 100%;
-            }
-            .btn-group {
-                gap: 10px;
-            }
-            .feedback-form {
-                padding: 20px;
-            }
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f5f5f5;
+        color: #333;
+      }
+      header {
+        background: #2c3e50;
+        color: white;
+        padding: 1rem 2rem;
+        text-align: center;
+      }
+      nav {
+        margin-top: 1rem;
+      }
+      .nav-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      .btn {
+        padding: 12px 20px;
+        background: #3498db;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: bold;
+      }
+      .btn:hover {
+        background: #2980b9;
+      }
+      main {
+        max-width: 800px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+        background: white;
+        padding: 2rem;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+      }
+      footer {
+        text-align: center;
+        padding: 1.5rem;
+        color: #777;
+        font-size: 0.9rem;
+      }
     </style>
-</head>
-<body> <header>
-  <nav>
-    <a href="index.html">Главная</a> |
-    <a href="business-help.html">Business Help</a> |
-    <a href="market.html">Market</a> |
-    <a href="severity.html">Severity</a>
-  </nav>
-</header>
+  </head>
+  <body>
+    <header>
+      <h1>Techno News</h1>
+      <p>Аналитика, финансы, курсы валют, программирование и защита серверов</p>
+    </header>
 
-    <h1>Мой проект: новости, финансы, безопасность</h1>
-    <p>Выбери, что интересно прямо сейчас:</p>
-
-
-    <div class="btn-group">
-        <a href="news.html" class="btn">Что происходит в мире</a>
-        <a href="currency.html" class="btn">Курсы валют</a>
-        <a href="business-help.html" class="btn">Помощь малому бизнесу</a>
-        <a href="market.html" class="btn">Рынок и акции</a>
-        <a href="program.html" style="display: inline-block; padding: 12px 24px; background-color: #007bff; color: white; text-decoration: none; border-radius: 6px;">Программирование и защита</a>
-    </div>
-
-
-    
-    <form action="https://formspree.io/f/ВСТАВЬ_СЮДА_СВОЙ_КОД" method="POST">
-        <div class="feedback-form">
-            <h2>Оставьте отзыв</h2>
-
-            <label for="name">Ваше имя:</label>
-            <input type="text" id="name" name="name" required placeholder="Как к вам обращаться">
-
-            <label for="email">Ваш Email:</label>
-            <input type="email" id="email" name="email" required placeholder="example@mail.ru">
-
-            <label for="message">Ваш отзыв или вопрос:</label>
-            <textarea id="message" name="message" rows="5" required placeholder="Напишите, что понравилось или что улучшить…"></textarea>
-            
-            <p class="note">
-                Если хотите связаться по поводу рекламы, пишите отзыв на сайт от имени самого сайта, или в вк менеджеру Ivan Borovikov.<br>
-                Чтобы это работало, замените «ВСТАВЬ_СЮДА_СВОЙ_КОД» на код от Formspree.
-            </p>
-        </div>
-    </form>
-
-    
-    <script type="text/javascript">
-        (function(m,e,t,r,i,k,a){
-            m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();
-            for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-            k=e.createElement(t),a=e.getElementsByTagName(t),k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-        })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=110753553', 'ym');
-
-        ym(110753553, 'init', {
-            ssr: true, 
-            webvisor: true, 
-            clickmap: true, 
-            ecommerce: "dataLayer", 
-            referrer: document.referrer, 
-            url: location.href, 
-            accurateTrackBounce: true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/110753553" style="position:absolute; left:-9999px;" alt="" /></div></noscript
-</body>
-</html>
+    <main>
+      <section>
+        <h2>Добро пожаловать на Techno News</h2>
+        <p>Здесь ты найдёшь свежие новости, обзоры финансовых рынков, материалы по программированию и советы по защите серверов
