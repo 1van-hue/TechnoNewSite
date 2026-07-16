@@ -1,89 +1,69 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Techno News — новости, финансы, программирование</title>
-
-    <!-- Сюда вставишь метатег от Яндекс Вебмастера -->
-    <!-- <meta name="yandex-verification" content="ТВОЙ_КОД_ОТ_ЯНДЕКСА" /> -->
-
+<head>
+    <meta charset="UTF-8">
+    <title>Tehno News</title>
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background: #f5f5f5;
-        color: #333;
-      }
-      header {
-        background: #2c3e50;
-        color: white;
-        padding: 1rem 2rem;
-        text-align: center;
-      }
-      nav {
-        margin-top: 1rem;
-      }
-      .nav-buttons {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-        justify-content: center;
-      }
-      .btn {
-        padding: 12px 20px;
-        background: #3498db;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: bold;
-      }
-      .btn:hover {
-        background: #2980b9;
-      }
-      main {
-        max-width: 800px;
-        margin: 2rem auto;
-        padding: 0 1rem;
-        background: white;
-        padding: 2rem;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-        border-radius: 8px;
-      }
-      footer {
-        text-align: center;
-        padding: 1.5rem;
-        color: #777;
-        font-size: 0.9rem;
-      }
+        /* Базовая стилизация */
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f9f9f9;
+        }
+        
+        /* Стили для кнопок */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .main-button {
+            padding: 15px 30px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+        }
+        
+        .main-button:hover {
+            background-color: #0056b3;
+        }
     </style>
-  </head>
-  <body>
-    <header>
-      <h1>Techno News</h1>
-      <p>Аналитика, финансы, курсы валют, программирование и защита серверов</p>
-    </header>
+</head>
+<body>
+    <!-- Заголовок сайта -->
+    <h1 style="text-align: center; margin-bottom: 20px;">
+        Techno News
+    </h1>
 
-    <main>
-      <section>
-        <h2>Добро пожаловать на Techno News</h2>
-        <p>Здесь ты найдёшь свежие новости, обзоры финансовых рынков, материалы по программированию и советы по защите серверов от DDoS.</p>
-      </section>
-    </main>
-
-    <nav>
-      <div class="nav-buttons">
-        <a href="/news.html" class="btn">Новости</a>
-        <a href="/market.html" class="btn">Рынок валют</a>
-        <a href="/security.html" class="btn">Защита сервера</a>
-        <a href="/business-help.html" class="btn">Помощь бизнесу</a>
-      </div>
-    </nav>
-
-    <footer>
-      &copy; 2026 Techno News. Все права защищены.
-    </footer>
-  </body>
+    <!-- Контейнер для кнопок -->
+    <div class="button-container">
+        <!-- Кнопка "Новости" -->
+        <a href="/news.html" class="main-button">
+            Новости
+        </a>
+        
+        <!-- Кнопка "Рынок валют" -->
+        <a href="/market.html" class="main-button">
+            Рынок валют
+        </a>
+        
+        <!-- Кнопка "Защита сервера" -->
+        <a href="/security.html" class="main-button">
+            Защита сервера
+        </a>
+        
+        <!-- Кнопка "Помощь  малому бизнесу" -->
+        <a href="/business-help.html" class="main-button">
+            Помощь малому бизнесу
+        </a>
+    </div>
+</body>
 </html>
-
